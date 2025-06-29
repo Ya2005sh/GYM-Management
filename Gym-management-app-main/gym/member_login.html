@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Member Login</title>
+  <link rel="stylesheet" href="member_login.css" />
+</head>
+<body>
+
+  <div class="container" id="loginContainer">
+    <h2>Member Login</h2>
+    <form id="loginForm">
+      <input type="text" id="memberIdInput" placeholder="Enter ID Number (e.g., 0001)" required />
+      <input type="text" id="memberNameInput" placeholder="Enter Name" required />
+      <button type="submit">Login</button>
+    </form>
+  </div>
+<div class="container" id="memberInfo" style="display: none;">
+  <h3>Member Details</h3>
+  <div class="info-group"><span>ID Number:</span> <span id="infoId"></span></div>
+  <div class="info-group"><span>Name:</span> <span id="infoName"></span></div>
+  <div class="info-group"><span>Age:</span> <span id="infoAge"></span></div>
+  <div class="info-group"><span>Package:</span> <span id="infoPackage"></span></div>
+  <div class="info-group"><span>Added On:</span> <span id="infoTimestamp"></span></div>
+
+  <!-- 🚪 Logout Button -->
+  <div class="logout-container">
+    <button id="memberLogoutBtn">🚪 Logout</button>
+  </div>
+</div>
+
+
+  <div class="container" id="memberNoticeBoard" style="display: none;">
+    <h3>Notice Board</h3>
+    <div id="noticesContainer" style="max-height: 300px; overflow-y: auto;"></div>
+  </div>
+
+  <!-- Load Firebase SDKs & Scripts -->
+  <script src="https://www.gstatic.com/firebasejs/10.3.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.3.1/firebase-database-compat.js"></script>
+  <script src="firebase-config.js"></script>
+  <script src="member_login.js"></script>
+</body>
+</html>

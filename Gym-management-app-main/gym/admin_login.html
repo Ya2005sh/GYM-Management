@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login</title>
+    <link rel="stylesheet" href="admin_style.css" />
+</head>
+<body>
+  <script src="https://www.gstatic.com/firebasejs/10.3.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.3.1/firebase-database-compat.js"></script>
+<script src="firebase-config.js"></script>
+<script src="member_login.js"></script> <!-- or dashboard.js etc -->
+    <div class="login-container">
+        <h2>Admin Login</h2>
+        <form  id="adlogin">
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username" required />
+    
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" required />
+    
+          <button type="submit">Login</button>
+        </form>
+        <div class="login-footer">
+          <p>Are you a Member? <a href="member_login.html">login here</a></p>
+        </div>
+      </div>
+
+     <!-- Firebase SDKs -->
+<script src="https://www.gstatic.com/firebasejs/10.3.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.3.1/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.3.1/firebase-database-compat.js"></script>
+
+<!-- Your Firebase Config -->
+<script src="firebase-config.js"></script>
+
+<!-- Your App Script -->
+<script src="login.js"></script>
+
+</body>
+
+
+</html>
